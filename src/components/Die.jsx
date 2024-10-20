@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 
-export default function Die({value}) {
+export default function Die({value, isHeld, holdDice}) {
   return (
-    <div className="die-face">
+    <button 
+      className={`die-face ${isHeld ? "held" : ""}`}
+      onClick={holdDice}
+    >
       {value}
-    </div>
+    </button>
   )
 }
