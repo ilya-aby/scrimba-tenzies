@@ -1,7 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  width: 100vw;
+}
+
+#root {
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -15,8 +23,9 @@ body {
 
 main {
   background-color: #F5F5F5;
-  width: 380px;
-  height: 380px;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
   margin: 100px auto;
   padding: 2em;
   border-radius: 10px;
